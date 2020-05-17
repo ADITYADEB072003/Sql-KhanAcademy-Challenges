@@ -79,6 +79,6 @@ WHERE genre LIKE 'Pop' ;
 It should use IN on a nested subquery that's based on your previous query. */
 SELECT title 
 FROM songs 
-WHERE artist 
+WHERE artistS 
 LIKE (SELECT name FROM artists WHERE genre like 'Pop') ;
 
